@@ -1,0 +1,66 @@
+:root {
+  /* background-colors */
+  --bcg-main: #feedd5;
+  --bcg-first-accent: #fff8ee;
+  --bcg-second-accent: #e1f1ff;
+  --bcg-header: #8cc9ff;
+  --button-accent: #0f3984;
+  /* text-colors */
+  --main-text: #001b4a;
+  --accent-text: #fff8ee;
+  --link-text: #e49125;
+  --visited-link: #4b71b5;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: calc(30 / 22);
+  letter-spacing: -0.015em;
+  color: var(--main-text);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--main-text);
+}
+.link:visited {
+  color: var(--visited-link);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-text);
+}
+
+/* end of general settings */
+
+/* header */
+.header {
+  background-color: var(--bcg-header);
+}
+.header-btn {
+  background-color: var(--bcg-second-accent);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+.header-btn:hover,
+.header-btn:focus {
+  background-color: var(--button-accent);
+  color: var(--accent-text);
+}
+
+/* footer */
+.footer {
+  background-color: var(--bcg-header);
+}
+.address {
+  font-style: normal;
+}

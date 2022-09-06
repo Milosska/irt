@@ -1,3 +1,4 @@
+/* ===================== global settings ============== */
 :root {
   /* background-colors */
   --bcg-main: #feedd5;
@@ -12,7 +13,7 @@
   --visited-link: #4b71b5;
 }
 body {
-  font-family: "Overpass", sans-serif;
+  font-family: 'Overpass', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -20,34 +21,90 @@ body {
   letter-spacing: -0.015em;
   color: var(--main-text);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+.address {
+  font-style: normal;
+}
+.container {
+  width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 .link {
   text-decoration: none;
-  color: var(--main-text);
-}
-.link:visited {
-  color: var(--visited-link);
-}
-.link:hover,
-.link:focus {
-  color: var(--accent-text);
+  color: inherit;
 }
 
-/* end of general settings */
+/*============== end of general settings ==================*/
 
-/* header */
+/*===================== header =============================*/
 .header {
   background-color: var(--bcg-header);
 }
-.header-btn {
-  background-color: var(--bcg-second-accent);
-  font-weight: 500;
-  font-size: 26px;
-  line-height: calc(33 / 26);
+.nav-thumb {
   display: flex;
   align-items: center;
+}
+.logo-img {
+  width: 147px;
+}
+.navigation-list {
+  display: flex;
+  gap: 30px;
+
+  margin-left: 35px;
+}
+.nav-link {
+  display: inline-block;
+  padding: 26px 0;
+
+  font-weight: 500;
+  line-height: 1.3;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-text);
+}
+.header-btn-list {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-left: auto;
+}
+.header-btn {
+  min-width: 150px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: var(--bcg-second-accent);
+
+  font-weight: 500;
   text-align: center;
   letter-spacing: -0.015em;
 }
@@ -55,12 +112,4 @@ body {
 .header-btn:focus {
   background-color: var(--button-accent);
   color: var(--accent-text);
-}
-
-/* footer */
-.footer {
-  background-color: var(--bcg-header);
-}
-.address {
-  font-style: normal;
 }

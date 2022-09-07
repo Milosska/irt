@@ -5,7 +5,10 @@
   --bcg-first-accent: #fff8ee;
   --bcg-second-accent: #e1f1ff;
   --bcg-header: #8cc9ff;
+
+  /*------------------ buttons ------------------------*/
   --button-accent: #0f3984;
+  --button-general: #e1f1ff;
 
   /*-------------------- text-colors ------------------*/
   --main-text: #001b4a;
@@ -116,7 +119,7 @@ button {
   min-width: 150px;
   padding-top: 11px;
   padding-bottom: 11px;
-  background-color: var(--bcg-second-accent);
+  background-color: var(--button-general);
 
   font-weight: 500;
   text-align: center;
@@ -179,4 +182,57 @@ button {
   font-size: 32px;
   line-height: 1.3;
   letter-spacing: -1px;
+}
+
+/*------------------- about section --------------------------------*/
+.about-event {
+  background-color: var(--bcg-main);
+}
+.about-container {
+  display: flex;
+  gap: 80px;
+}
+.video-placeholder {
+  width: 620px;
+}
+.about-left {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.about-right {
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+.about-event-title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 0.95;
+}
+.about-event-text {
+  margin-bottom: 24px;
+}
+.about-btn-list {
+  display: flex;
+  gap: 55px;
+}
+.about-btn {
+  min-width: 230px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--button-general);
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.3;
+  text-align: center;
+
+  transition: color var(--animation-time) var(--time-function),
+    background-color var(--animation-time) var(--time-function);
+}
+.about-btn:hover,
+.about-btn:focus {
+  background-color: var(--button-accent);
+  color: var(--accent-text);
 }

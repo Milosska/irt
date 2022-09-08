@@ -113,9 +113,9 @@ button {
   font-weight: 500;
   line-height: 1.3;
 
-  transition: color var(--animation-action), transform var(--animation-action);
+  transition: color var(--animation-action) 250ms, transform var(--animation-action);
 }
-/* .nav-link::before {
+.nav-link::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -127,18 +127,29 @@ button {
   width: 100%;
   height: 4px;
   background-color: var(--accent-text);
+}
+@keyframes headerLinkAnimation {
+  0% {
+    transform: translateX(-100%) translateY(10px);
+  }
+  50% {
+    transform: translateX(0) translateY(10px);
+  }
+  100% {
+    transform: translateX(0) translateY(50px);
+  }
+}
 
-  transition: transform var(--animation-action);
-} */
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-text);
   transform: translateY(-10px);
 }
-/* .nav-link:hover:before,
+.nav-link:hover:before,
 .nav-link:focus:before {
-  transform: translateX(0) translateY(50px);
-} */
+  animation-name: headerLinkAnimation;
+  animation-duration: 500ms;
+}
 
 .header-btn-list {
   display: flex;

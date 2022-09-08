@@ -120,7 +120,7 @@ button {
   top: 0;
   right: 0;
 
-  transform: translateX(-100%) translateY(10px);
+  transform: translateX(-110%) translateY(10px);
 
   content: ' ';
   display: block;
@@ -130,7 +130,7 @@ button {
 }
 @keyframes headerLinkAnimation {
   0% {
-    transform: translateX(-100%) translateY(10px);
+    transform: translateX(-110%) translateY(10px);
   }
   50% {
     transform: translateX(0) translateY(10px);
@@ -303,6 +303,8 @@ button {
   position: relative;
 }
 .organized-link {
+  position: relative;
+
   display: flex;
   align-items: center;
 
@@ -312,6 +314,9 @@ button {
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
+
+  transform: scale(1);
+  transition: transform var(--animation-action);
 }
 .nuft-link {
   background-image: url(../pictures/partners/nuft.png);
@@ -344,4 +349,6 @@ button {
 .organized-link:focus .organized-link-thumb {
   background-color: rgba(225, 241, 255, 0.8);
   backdrop-filter: blur(2px);
+
+  transform: scale(1.2);
 }

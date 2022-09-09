@@ -352,3 +352,49 @@ button {
 
   transform: scale(1.2);
 }
+
+/*-------------------- audience section -----------------------------------*/
+.join {
+  background-color: var(--bcg-main);
+}
+.audience-container {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  text-align: center;
+}
+.join-title {
+  margin-bottom: 30px;
+}
+.join-text {
+  margin-bottom: 30px;
+}
+.audience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+
+  padding: 0 45px;
+}
+.audience-item {
+  width: calc(100% / 3 - 50px);
+}
+.audience-icon {
+  width: 58px;
+  height: 58px;
+
+  margin-bottom: 15px;
+}
+.audience-title {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 0.95;
+  letter-spacing: 1.083px;
+  text-transform: uppercase;
+}
+.audience-text {
+  font-size: 18px;
+  line-height: 1.55;
+}

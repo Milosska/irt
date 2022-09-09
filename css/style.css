@@ -378,6 +378,12 @@ button {
 }
 .audience-item {
   width: calc(100% / 3 - 50px);
+
+  transform: scale(1);
+  transition: transform var(--animation-action);
+}
+.audience-item:hover {
+  transform: scale(1.2);
 }
 .audience-icon {
   width: 58px;

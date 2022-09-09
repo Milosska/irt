@@ -398,3 +398,40 @@ button {
   font-size: 18px;
   line-height: 1.55;
 }
+
+/*---------------------- deadlines section ---------------------------------*/
+.deadlines {
+  background-color: var(--bcg-second-accent);
+  padding: 50px 0;
+
+  text-align: center;
+}
+.deadlines-title {
+  margin-bottom: 30px;
+}
+.deadlines-list {
+  display: flex;
+  gap: 40px;
+}
+.deadlines-item {
+  width: 280px;
+  height: 280px;
+  background-color: var(--bcg-first-accent);
+
+  padding: 40px 20px 20px;
+}
+.deadlines-icon {
+  width: 82px;
+  height: 82px;
+
+  margin-bottom: 15px;
+}
+.deadlines-dates {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 0.95;
+  letter-spacing: 1.083px;
+  text-transform: uppercase;
+}

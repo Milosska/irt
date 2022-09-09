@@ -441,3 +441,69 @@ button {
   letter-spacing: 1.083px;
   text-transform: uppercase;
 }
+
+/*---------------------- information section ---------------------------------*/
+.information {
+  background-color: var(--bcg-main);
+  padding: 50px 0;
+}
+.information-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.info-thumb {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.information-list-thumb {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 530px;
+}
+.info-item {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 30px;
+}
+.info-subtitle {
+  display: block;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+}
+.info-text {
+  display: block;
+  width: 200px;
+}
+.archives-link {
+  display: block;
+  width: 200px;
+  color: var(--link-text);
+
+  transition: color var(--animation-action);
+}
+.archives-link:hover,
+.archives-link:focus {
+  color: var(--visited-link);
+}
+.thematic-areas-thumb {
+  display: flex;
+  align-items: baseline;
+  width: 720px;
+}
+.areas-subtitle {
+  margin-right: 30px;
+
+  font-weight: 700;
+}
+.areas-item {
+  width: 500px;
+}
+.areas-item:not(:last-child) {
+  margin-bottom: 10px;
+}

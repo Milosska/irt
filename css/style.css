@@ -176,6 +176,63 @@ button {
 }
 /*===================== header end =============================*/
 
+/*========================= footer ============================== */
+.footer {
+  background-color: var(--bcg-header);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding: 74px 0 45px;
+}
+.footer-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.75;
+}
+.address-item:nth-child(1),
+.address-item:nth-child(2) {
+  margin-bottom: 20px;
+}
+.copyright {
+  margin-top: 30px;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+.footer-social-thumb {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.social-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-align: right;
+}
+.social-list {
+  display: flex;
+  gap: 12px;
+}
+.footer-link-icon {
+  width: 44px;
+  height: 44px;
+
+  fill: currentColor;
+  transition: color var(--animation-action);
+}
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+  fill: var(--accent-text);
+}
+/*========================= footer end============================ */
+
 /*========================= main ============================== */
 
 /*-------------------------- hero section ----------------------*/
@@ -507,3 +564,4 @@ button {
 .areas-item:not(:last-child) {
   margin-bottom: 10px;
 }
+/*===================== main end =============================*/

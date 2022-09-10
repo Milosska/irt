@@ -35,12 +35,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS styles -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container" data-aos="zoom-in" data-aos-duration="2000">
         <div class="nav-thumb">
           <a class="logo-link link" href="./index.html">
             <svg class="logo-img">
@@ -89,7 +91,7 @@
     <main>
       <section class="hero">
         <div class="hero-bg">
-          <div class="hero-container container">
+          <div class="hero-container container" data-aos="zoom-out-up" data-aos-duration="2000">
             <p class="uppertitle">International Round Table</p>
             <h1 class="hero-title">
               Sustainable consumption <br />
@@ -103,7 +105,7 @@
         </div>
       </section>
       <section id="about" class="about-event">
-        <div class="about-container container">
+        <div class="about-container container" data-aos="fade-up" data-aos-duration="2000">
           <div class="about-left">
             <img class="video-placeholder" src="./pictures/Video-placeholder.jpg" alt="" />
           </div>
@@ -134,7 +136,7 @@
         </div>
       </section>
       <section id="organizers" class="organized">
-        <div class="organized-container container">
+        <div class="organized-container container" data-aos="fade-right" data-aos-duration="2000">
           <div class="organized-left">
             <h2 class="organized-title section-title">Organizers</h2>
             <p class="organized-text">
@@ -199,7 +201,7 @@
         </div>
       </section>
       <section id="audience" class="join">
-        <div class="audience-container container">
+        <div class="audience-container container" data-aos="fade-left" data-aos-duration="2000">
           <h2 class="join-title section-title">Who should join us?</h2>
           <p class="join-text">
             The International Round Table «Sustainable consumption in restaurant industry» is global
@@ -272,7 +274,7 @@
       <section id="deadlines" class="deadlines">
         <div class="container">
           <h2 class="deadlines-title section-title">Deadlines</h2>
-          <ul class="deadlines-list list">
+          <ul class="deadlines-list list" data-aos="flip-left" data-aos-duration="2000">
             <li class="deadlines-item">
               <svg class="deadlines-icon">
                 <use href="./pictures/sprite.svg#contract"></use>
@@ -305,7 +307,7 @@
         </div>
       </section>
       <section id="requirements" class="information">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-duration="2000">
           <h2 class="information-title section-title">Information for the participants</h2>
           <div class="info-thumb">
             <div class="information-list-thumb">
@@ -349,7 +351,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer-container container" data-aos="fade-right" data-aos-duration="2000">
         <div class="address-thumb">
           <h2 class="footer-title">Contact Us</h2>
           <address class="address">
@@ -436,5 +438,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- AOS scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
   </body>
 </html>

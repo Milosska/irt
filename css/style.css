@@ -219,11 +219,13 @@ button {
   display: inline-block;
 
   color: interit;
-  transition: color var(--animation-action);
+  transform: translateY(0);
+  transition: color var(--animation-action) 250ms, transform var(--animation-action) 250ms;
 }
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-text);
+  transform: translateY(-10px);
 }
 .address-link::before {
   position: relative;
@@ -543,6 +545,13 @@ button {
   background-color: var(--bcg-first-accent);
 
   padding: 40px 20px 20px;
+
+  transform: scale(1);
+  transition: transform var(--animation-action);
+}
+.deadlines-item:hover {
+  transform: scale(1.2);
+  background-color: var(--bcg-main);
 }
 .deadlines-icon {
   width: 82px;
@@ -615,7 +624,7 @@ button {
   color: var(--link-text);
 
   overflow: hidden;
-  transition: color var(--animation-action);
+  transition: color var(--animation-action) 250ms;
 }
 .archives-link:hover:before,
 .archives-link:focus:before {

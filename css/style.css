@@ -179,7 +179,19 @@ button {
 
 /*========================= footer ============================== */
 .footer {
+  position: relative;
   background-color: var(--bcg-header);
+}
+.footer-container::before {
+  position: absolute;
+  top: 18px;
+  left: 0;
+
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-text);
 }
 .footer-container {
   display: flex;
@@ -199,6 +211,49 @@ button {
 .address-item:nth-child(2) {
   margin-bottom: 20px;
 }
+.address-link {
+  position: relative;
+  overflow: hidden;
+
+  display: inline-block;
+
+  color: interit;
+  transition: color var(--animation-action);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-text);
+}
+.address-link::before {
+  position: relative;
+
+  transform: translateX(-110%) translateY(0);
+
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text);
+}
+
+.address-link:hover:before,
+.address-link:focus:before {
+  animation-name: footerLinkAnimation;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes footerLinkAnimation {
+  0% {
+    transform: translateX(-110%) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(0) translateY(30px);
+  }
+}
+
 .copyright {
   margin-top: 30px;
 
@@ -226,11 +281,13 @@ button {
   height: 44px;
 
   fill: currentColor;
-  transition: color var(--animation-action);
+  transform: scale(1);
+  transition: color var(--animation-action), transform var(--animation-action);
 }
 .footer-link-icon:hover,
 .footer-link-icon:focus {
   fill: var(--accent-text);
+  transform: scale(1.5);
 }
 /*========================= footer end============================ */
 
@@ -559,20 +616,9 @@ button {
 }
 .archives-link:hover:before,
 .archives-link:focus:before {
-  animation-name: archivesLinkAnimation;
+  animation-name: footerLinkAnimation;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
-}
-@keyframes archivesLinkAnimation {
-  0% {
-    transform: translateX(-110%) translateY(0);
-  }
-  50% {
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    transform: translateX(0) translateY(30px);
-  }
 }
 .archives-link:hover,
 .archives-link:focus {

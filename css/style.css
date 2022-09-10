@@ -149,6 +149,7 @@ button {
 .nav-link:focus:before {
   animation-name: headerLinkAnimation;
   animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
 .header-btn-list {
@@ -537,12 +538,41 @@ button {
   display: block;
   width: 200px;
 }
+.archives-link::before {
+  position: relative;
+
+  transform: translateX(-110%) translateY(0);
+
+  content: ' ';
+  display: block;
+  width: 42%;
+  height: 4px;
+  background-color: var(--visited-link);
+}
 .archives-link {
   display: block;
   width: 200px;
   color: var(--link-text);
 
+  overflow: hidden;
   transition: color var(--animation-action);
+}
+.archives-link:hover:before,
+.archives-link:focus:before {
+  animation-name: archivesLinkAnimation;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes archivesLinkAnimation {
+  0% {
+    transform: translateX(-110%) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(0) translateY(30px);
+  }
 }
 .archives-link:hover,
 .archives-link:focus {

@@ -297,7 +297,7 @@ button {
 /*========================= main ============================== */
 
 /*-------------------------- hero section ----------------------*/
-.hero {
+/* .hero {
   background-color: var(--bcg-first-accent);
 }
 .hero-bg {
@@ -341,7 +341,7 @@ button {
   font-size: 32px;
   line-height: 1.3;
   letter-spacing: -1px;
-}
+} */
 
 /*------------------- about section --------------------------------*/
 .about-event {

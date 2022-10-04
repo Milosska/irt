@@ -76,7 +76,7 @@ button {
 /*============== end of global settings ==================*/
 
 /*===================== header =============================*/
-.header {
+/* .header {
   background-color: var(--bcg-header);
 }
 .nav-thumb {
@@ -175,7 +175,7 @@ button {
 .header-btn:focus {
   background-color: var(--button-accent);
   color: var(--accent-text);
-}
+} */
 /*===================== header end =============================*/
 
 /*========================= footer ============================== */

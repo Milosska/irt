@@ -43,49 +43,67 @@
   </head>
   <body>
     <header class="header">
-      <div class="container" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="header-container" data-aos="zoom-in" data-aos-duration="2000">
         <div class="nav-thumb">
+          <!------------ Logo------------->
           <a class="logo-link link" href="./index.html">
             <svg class="logo-img">
               <use href="./pictures/sprite.svg#logo"></use>
             </svg>
           </a>
-          <nav class="navigation">
-            <ul class="navigation-list list">
-              <li class="navigation-list-item">
-                <a class="nav-link link" href="#about">About</a>
-              </li>
-              <li class="navigation-list-item">
-                <a class="nav-link link" href="#organizers">Organizers</a>
-              </li>
-              <li class="navigation-list-item">
-                <a class="nav-link link" href="#audience">Audience</a>
-              </li>
-              <li class="navigation-list-item">
-                <a class="nav-link link" href="#deadlines">Deadlines</a>
-              </li>
-              <li class="navigation-list-item">
-                <a class="nav-link link" href="#requirements">Requirements</a>
-              </li>
-              <li class="navigation-list-item">
-                <a class="nav-link link" href="./archives.html">Archives</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header-btn-list list">
-            <li class="header-btn-item">
-              <a
-                class="header-btn link"
-                href="https://forms.gle/iywNhcNVQD1hp3X98"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Participate</a
-              >
-            </li>
-            <li class="header-btn-item">
-              <a class="header-btn link" href="mailto:roundtabletrap@gmail.com">Contact Us</a>
-            </li>
-          </ul>
+          <!------------ Mobile menu------------->
+          <div class="menu js-menu-container">
+            <!------------ Mobile menu open btn------------->
+            <button
+              class="menu-btn menu-btn--open js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              type="button"
+            >
+              <svg class="menu-icon" area-label="Перемикач мобільного меню">
+                <use href="./pictures/sprite.svg#menu-open"></use>
+              </svg>
+            </button>
+            <!------------ Mobile menu container------------->
+            <div class="mobile-thumb">
+              <!------------ Mobile menu close btn------------->
+              <button class="menu-btn menu-btn--close js-close-menu" type="button">
+                <svg class="menu-icon" area-label="Перемикач мобільного меню">
+                  <use href="./pictures/sprite.svg#menu-close"></use>
+                </svg>
+              </button>
+              <!------------ Navigation------------->
+              <nav class="navigation">
+                <ul class="navigation-list">
+                  <li class="navigation-list-item">
+                    <a class="nav-link link" href="#about">About</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link link" href="#organizers">Organizers</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link link" href="#audience">Audience</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link link" href="#deadlines">Deadlines</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link link" href="#requirements">Requirements</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link link" href="./archives.html">Archives</a>
+                  </li>
+                </ul>
+              </nav>
+              <!------------ Languages------------->
+              <ul class="language">
+                <li class="language-item">
+                  <a href="" class="language-link">EN</a>
+                </li>
+                <li class="language-item"><a href="" class="language-link">UA</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -437,6 +455,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu action -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
 
     <!-- AOS scroll animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

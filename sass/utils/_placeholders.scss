@@ -1,0 +1,72 @@
+/* ================= main placeholders ===============*/
+%address {
+  font-style: normal;
+}
+
+%container {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: map-get($breakpoints, 'phone')) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    width: 1200px;
+  }
+}
+
+%section {
+  padding: 60px 0;
+
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    padding: 94px 0;
+  }
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+%link {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+%section-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    font-size: 38px;
+  }
+}
+
+/* =================== visually-hidden =================*/
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* =================== centerd element pattern =================*/
+%centred {
+  margin-left: auto;
+  margin-right: auto;
+}

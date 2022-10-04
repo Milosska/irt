@@ -1,0 +1,90 @@
+/* ====================== line height calculation =======================*/
+@mixin font-size($size: 14px, $height: 22px) {
+  font-size: $size;
+  line-height: calc($height / $size);
+}
+
+/* ============================ flex patterns ===========================*/
+@mixin flex-s($y: center) {
+  display: flex;
+  align-items: $y;
+}
+
+@mixin flex-m($x: center, $y: center) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin flex-l($gap, $x: center, $y: center) {
+  display: flex;
+  gap: $gap;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin flex-basis($n, $gap) {
+  flex-basis: calc((100% - ($gap * ($n - 1))) / $n);
+}
+
+/* ============================= position pattern =======================*/
+@mixin position($position: absolute, $top-or-bottom: top, $y: 0, $left-or-right: left, $x: 0) {
+  position: $position;
+  #{$top-or-bottom}: $y;
+  #{$left-or-right}: $x;
+}
+
+/* ============================= animation patterns =======================*/
+@mixin animation-s($property) {
+  transition: $property $animation;
+}
+
+@mixin animation-m($property-1, $property-2) {
+  transition: $property-1 $animation, $property-2 $animation;
+}
+
+@mixin animation-l($property-1, $property-2, $property-3) {
+  transition: $property-1 $animation, $property-2 $animation, $property-3 $animation;
+}
+
+/* =============================== svg pattern ============================*/
+@mixin svg($width, $height) {
+  width: $width;
+  height: $height;
+  fill: currentColor;
+}
+
+/* ============================ pseudoelement pattern ======================*/
+@mixin pseudo($width, $height) {
+  content: '';
+  width: $width;
+  height: $height;
+}
+
+/* ============================ social links icons ==========================*/
+@mixin socials($width: 44px, $height: 44px) {
+  @include flex-m;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  fill: map-get($txtcolor, 'main');
+  @include animation(fill);
+
+  &:hover,
+  &:focus {
+    fill: map-get($txtcolor, 'accent');
+  }
+}
+
+/* ============================ media pattern ======================*/
+@mixin media($max-or-min: min, $device) {
+  @if $max-or-min == max {
+    @media screen and (#{$max-or-min}-width: (map-get($breakpoints, '#{$device}') - 0.5px)) {
+      @content;
+    }
+  } @else {
+    @media screen and (#{$max-or-min}-width: map-get($breakpoints, '#{$device}')) {
+      @content;
+    }
+  }
+}

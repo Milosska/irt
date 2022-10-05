@@ -344,7 +344,7 @@ button {
 } */
 
 /*------------------- about section --------------------------------*/
-.about-event {
+/* .about-event {
   background-color: var(--bcg-main);
 }
 .about-container {
@@ -391,7 +391,7 @@ button {
 .about-btn:focus {
   background-color: var(--button-accent);
   color: var(--accent-text);
-}
+} */
 
 /*---------------------- organizers section ------------------*/
 .organized {

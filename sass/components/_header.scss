@@ -30,7 +30,6 @@
   @include media(min, desktop) {
     padding-top: 12px;
     padding-bottom: 18px;
-    margin-right: 127px;
   }
 }
 
@@ -139,6 +138,7 @@
 
 .navigation-list-item {
   @include media(max, tablet) {
+    overflow: hidden;
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -203,10 +203,6 @@
     padding-bottom: 15px;
     margin-bottom: 0;
     margin-left: 56px;
-  }
-
-  @include media(min, desktop) {
-    margin-left: 190px;
   }
 }
 

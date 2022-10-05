@@ -22,10 +22,13 @@
 }
 
 %section {
-  padding: 60px 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  // padding: 60px 0;
 
   @media screen and (min-width: map-get($breakpoints, 'desktop')) {
-    padding: 94px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 }
 

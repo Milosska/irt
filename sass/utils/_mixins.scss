@@ -63,12 +63,11 @@
 
 /* ============================ social links icons ==========================*/
 @mixin socials($width: 44px, $height: 44px) {
-  @include flex-m;
   width: $width;
   height: $height;
   border-radius: 50%;
   fill: map-get($txtcolor, 'main');
-  @include animation(fill);
+  @include animation-s(fill);
 
   &:hover,
   &:focus {
@@ -86,5 +85,42 @@
     @media screen and (#{$max-or-min}-width: map-get($breakpoints, '#{$device}')) {
       @content;
     }
+  }
+}
+
+/* ============================ link animation pattern ======================*/
+@mixin link-animation($width: 100%, $y) {
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translateX(-110%) translateY(0);
+
+    content: ' ';
+    display: block;
+    width: $width;
+    height: 4px;
+    background-color: map-get($txtcolor, 'accent');
+  }
+
+  @keyframes headerLinkAnimation {
+    0% {
+      transform: translateX(-110%) translateY(0);
+    }
+    50% {
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      transform: translateX(0) translateY($y);
+    }
+    // y=50px
+  }
+
+  &:hover:before,
+  &:focus:before {
+    animation-name: headerLinkAnimation;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
   }
 }

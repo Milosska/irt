@@ -312,20 +312,26 @@ button {
 .header-link {
   position: relative;
   display: inline-block;
-  margin-bottom: 45px;
-  font-size: 22px;
-  line-height: 0.8181818182;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 0.8888888889;
   letter-spacing: 0.03em;
 }
 .header-link:hover, .header-link:focus {
   color: #fff8ee;
+}
+@media screen and (min-width: 480px) {
+  .header-link {
+    font-size: 22px;
+    line-height: 0.8181818182;
+  }
 }
 
 .header-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -333,10 +339,24 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 480px) {
+  .header-social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .header-social-link {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   fill: #001b4a;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -345,10 +365,29 @@ button {
 .header-social-link:hover, .header-social-link:focus {
   fill: #fff8ee;
 }
+@media screen and (min-width: 480px) {
+  .header-social-link {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    fill: #001b4a;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-social-link:hover, .header-social-link:focus {
+    fill: #fff8ee;
+  }
+}
 
 .header-link-icon {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 480px) {
+  .header-link-icon {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .hero {

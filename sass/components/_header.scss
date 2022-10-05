@@ -7,13 +7,25 @@
 }
 
 .nav-thumb {
-  @include flex-m(space-between, center);
+  @include media(max, tablet) {
+    @include flex-m(space-between, center);
+  }
+
+  @include media(min, tablet) {
+    @include flex-m;
+  }
 }
 
 .logo-link {
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
+
+  @include media(min, tablet) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-right: 56px;
+  }
 }
 
 .logo-img {
@@ -21,20 +33,23 @@
   width: 115px;
   height: 38px;
 
+  @include media(min, tablet) {
+    width: 99px;
+    height: 36px;
+  }
+
   //   width: 150px;
   //   height: 50px;
 }
 
 .menu-btn {
-  @include media(max, tablet) {
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    cursor: pointer;
-    background-color: transparent;
-    color: map-get($txtcolor, 'main');
-    @include animation-s(color);
-  }
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: map-get($txtcolor, 'main');
+  @include animation-s(color);
 
   &:hover,
   &:focus {
@@ -58,6 +73,10 @@
       top: 10px;
       right: 10px;
     }
+  }
+
+  @include media(min, tablet) {
+    display: none;
   }
 }
 
@@ -87,10 +106,19 @@
   .menu.is-open & {
     transform: translateX(0);
   }
+
+  @include media(min, tablet) {
+    @include flex-m(baseline, center);
+    flex-direction: row;
+  }
 }
 
 .navigation-list {
   @extend %list;
+
+  @include media(min, tablet) {
+    @include flex-l(15px);
+  }
   // display: flex;
   // gap: 30px;
 
@@ -99,12 +127,15 @@
 
 .navigation-list-item {
   overflow: hidden;
-  &:not(:last-child) {
-    margin-bottom: 10px;
+
+  @include media(max, tablet) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
-  @include media(max, desktop) {
-    &--hidden {
+  &--hidden {
+    @include media(max, desktop) {
       display: none;
     }
   }
@@ -125,6 +156,10 @@
   }
 
   @include link-animation(100%, 30px);
+
+  @include media(min, tablet) {
+    @include font-size(18px, 23px);
+  }
 }
 
 // display: inline-block;
@@ -144,11 +179,30 @@
   @extend %list;
   overflow: hidden;
   margin-bottom: 10px;
+
+  @include media(min, tablet) {
+    display: inline-flex;
+    margin-bottom: 0;
+    margin-left: 56px;
+  }
+}
+
+.language-item {
+  display: inline-block;
+
+  &:first-child {
+    padding-right: 5px;
+    border-right: 1px solid map-get($txtcolor, 'main');
+  }
+  &:last-child {
+    padding-left: 5px;
+  }
 }
 
 .language-link {
   @extend %link;
   position: relative;
+  overflow: hidden;
   display: inline-block;
   font-weight: 500;
   @include font-size(32px, 41px);
@@ -160,8 +214,15 @@
     color: map-get($txtcolor, 'accent');
   }
 
-  &--current {
-    display: none;
+  @include media(max, tablet) {
+    &--current {
+      display: none;
+    }
+  }
+
+  @include media(min, tablet) {
+    display: block;
+    @include font-size(18px, 23px);
   }
 }
 
@@ -181,6 +242,10 @@
   @include media(min, phone) {
     @include font-size(22px, 18px);
   }
+
+  @include media(min, tablet) {
+    display: none;
+  }
 }
 
 .header-social-list {
@@ -189,6 +254,10 @@
 
   @include media(min, phone) {
     @include flex-l(30px);
+  }
+
+  @include media(min, tablet) {
+    display: none;
   }
 }
 

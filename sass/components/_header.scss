@@ -26,6 +26,12 @@
     padding-bottom: 22px;
     margin-right: 56px;
   }
+
+  @include media(min, desktop) {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    margin-right: 127px;
+  }
 }
 
 .logo-img {
@@ -38,8 +44,10 @@
     height: 36px;
   }
 
-  //   width: 150px;
-  //   height: 50px;
+  @include media(min, desktop) {
+    width: 150px;
+    height: 50px;
+  }
 }
 
 .menu-btn {
@@ -118,16 +126,18 @@
 
   @include media(min, tablet) {
     @include flex-l(15px);
+    padding-top: 30px;
+    padding-bottom: 15px;
   }
-  // display: flex;
-  // gap: 30px;
 
-  // margin-left: 35px;
+  @include media(min, desktop) {
+    @include flex-l(30px);
+    // padding-top: 21px;
+    // padding-bottom: 21px;
+  }
 }
 
 .navigation-list-item {
-  overflow: hidden;
-
   @include media(max, tablet) {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -144,6 +154,7 @@
 .nav-link {
   @extend %link;
   position: relative;
+  overflow: hidden;
 
   transition: color $animation 250ms;
 
@@ -155,25 +166,31 @@
     color: map-get($txtcolor, 'accent');
   }
 
-  @include link-animation(100%, 30px);
+  @include media(max, tablet) {
+    @include link-animation(100%, 30px);
+  }
 
   @include media(min, tablet) {
+    display: inline-block;
     @include font-size(18px, 23px);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include link-animation(100%, 25px);
+  }
+
+  @include media(min, desktop) {
+    @include font-size(22px, 28px);
+
+    @include link-animation(100%, 30px);
+    transform: translateY(0);
+    transition: transform $animation, color $animation 250ms;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-10px);
+    }
   }
 }
-
-// display: inline-block;
-// transform: translateY(0);
-//  transition: transform $animation, color $animation 250ms;
-
-//  &:hover,
-//   &:focus {
-//     transform: translateY(-10px);
-//   }
-
-// padding: 26px 0;
-
-// transition: color var(--animation-action) 250ms, transform var(--animation-action);
 
 .language {
   @extend %list;
@@ -182,8 +199,14 @@
 
   @include media(min, tablet) {
     display: inline-flex;
+    padding-top: 30px;
+    padding-bottom: 15px;
     margin-bottom: 0;
     margin-left: 56px;
+  }
+
+  @include media(min, desktop) {
+    margin-left: 190px;
   }
 }
 
@@ -214,15 +237,40 @@
     color: map-get($txtcolor, 'accent');
   }
 
-  @include media(max, tablet) {
-    &--current {
-      display: none;
-    }
-  }
-
   @include media(min, tablet) {
     display: block;
     @include font-size(18px, 23px);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include link-animation(100%, 25px);
+  }
+
+  @include media(min, desktop) {
+    @include font-size(22px, 28px);
+    @include link-animation(100%, 30px);
+    transform: translateY(0);
+    transition: transform $animation, color $animation 250ms;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-10px);
+    }
+  }
+
+  &--current {
+    @include media(max, tablet) {
+      display: none;
+    }
+    @include media(min, tablet) {
+      color: map-get($txtcolor, 'accent');
+      &::before {
+        display: none;
+      }
+      &:hover,
+      &:focus {
+        transform: translateY(0);
+      }
+    }
   }
 }
 
@@ -279,39 +327,3 @@
     height: 75px;
   }
 }
-
-// .nav-thumb {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .navigation-list-item {
-//   position: relative;
-//   overflow: hidden;
-// }
-
-// .header-btn-list {
-//   display: flex;
-//   align-items: center;
-//   gap: 26px;
-//   margin-left: auto;
-// }
-// .header-btn {
-//   display: inline-block;
-//   min-width: 150px;
-//   padding-top: 11px;
-//   padding-bottom: 11px;
-//   border-radius: 6px;
-//   background-color: var(--button-general);
-
-//   font-weight: 500;
-//   text-align: center;
-//   letter-spacing: -0.015em;
-
-//   transition: color var(--animation-action), background-color var(--animation-action);
-// }
-// .header-btn:hover,
-// .header-btn:focus {
-//   background-color: var(--button-accent);
-//   color: var(--accent-text);
-// }

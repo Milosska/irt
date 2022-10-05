@@ -89,6 +89,7 @@
 }
 
 /* ============================ link animation pattern ======================*/
+
 @mixin link-animation($width: 100%, $y) {
   &::before {
     position: absolute;

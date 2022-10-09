@@ -474,7 +474,7 @@ button {
 } */
 
 /*-------------------- audience section -----------------------------------*/
-.join {
+/* .join {
   background-color: var(--bcg-main);
 }
 .audience-container {
@@ -523,7 +523,7 @@ button {
 .audience-text {
   font-size: 18px;
   line-height: 1.55;
-}
+} */
 
 /*---------------------- deadlines section ---------------------------------*/
 .deadlines {

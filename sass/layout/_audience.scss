@@ -1,0 +1,56 @@
+.join {
+  @extend %section;
+  background-color: map-get($bgcolor, 'main');
+
+  @include media(max, desktop) {
+    display: none;
+  }
+}
+
+.audience-container {
+  @extend %container;
+  text-align: center;
+}
+.join-title {
+  @extend %section-title;
+  margin-bottom: 30px;
+}
+
+.join-text {
+  @include font-size(22px, 30px);
+  margin-bottom: 30px;
+}
+
+.audience-list {
+  @extend %list;
+  @include flex-l(50px);
+}
+
+.audience-item {
+  @include flex-basis(3, 50px);
+  transform: scale(1);
+  @include animation-s(transform);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.audience-icon {
+  width: 58px;
+  height: 58px;
+
+  margin-bottom: 15px;
+}
+
+.audience-title {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  @include font-size(21px, 20px);
+  text-transform: uppercase;
+}
+
+.audience-text {
+  @include font-size(18px, 28px);
+}

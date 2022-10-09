@@ -570,7 +570,7 @@ button {
 } */
 
 /*---------------------- information section ---------------------------------*/
-.information {
+/* .information {
   background-color: var(--bcg-main);
   padding: 50px 0;
 }
@@ -651,5 +651,5 @@ button {
 }
 .areas-item:not(:last-child) {
   margin-bottom: 10px;
-}
+} */
 /*===================== main end =============================*/

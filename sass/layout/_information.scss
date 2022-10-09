@@ -1,0 +1,188 @@
+.information {
+  @extend %section;
+  background-color: map-get($bgcolor, 'main');
+}
+
+.information-container {
+  @extend %container;
+  text-align: center;
+}
+
+.information-title {
+  @extend %section-title;
+  margin-bottom: 30px;
+}
+
+.info-thumb {
+  @include media(min, desktop) {
+    @include flex-l(30px, space-around, flex-start);
+  }
+}
+
+.information-list-thumb {
+  margin-bottom: 30px;
+
+  @include media(min, desktop) {
+    width: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.information-list {
+  @extend %list;
+
+  @include media(min, tablet) {
+    @include flex-s;
+  }
+
+  @include media(min, desktop) {
+    display: block;
+  }
+}
+
+.info-item {
+  @include flex-l(50px);
+  @extend %centred;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @include media(min, tablet) {
+    @include flex-l(30px);
+    @include flex-basis(2, 30px);
+
+    &:nth-child(n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media(min, desktop) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.info-subtitle {
+  @include flex-basis(2, 50px);
+  margin-left: auto;
+  //   margin-bottom: 15px;
+
+  font-weight: 700;
+  @include font-size(14px, 18px);
+  text-align: right;
+
+  @include media(min, tablet) {
+    flex-basis: calc((100% - 30px) * 0.6);
+  }
+
+  @include media(min, desktop) {
+    @include font-size(18px, 28px);
+  }
+}
+
+.info-text {
+  @include flex-basis(2, 50px);
+  margin-right: auto;
+  text-align: left;
+
+  @include media(min, tablet) {
+    flex-basis: calc((100% - 30px) * 0.4);
+  }
+
+  @include media(min, desktop) {
+    @include font-size(18px, 28px);
+  }
+}
+
+.archives-link-thumb {
+  position: relative;
+  display: inline-block;
+  @include flex-basis(2, 50px);
+  margin-right: auto;
+  text-align: left;
+  overflow: hidden;
+
+  @include media(min, tablet) {
+    flex-basis: calc((100% - 30px) * 0.4);
+  }
+}
+
+.archives-link {
+  @extend %link;
+  position: relative;
+  display: inline-block;
+  padding-top: 2px;
+
+  color: map-get($txtcolor, 'link');
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: map-get($bgcolor, 'btn-accent');
+  }
+
+  @include media(min, desktop) {
+    @include font-size(18px, 28px);
+  }
+}
+
+.thematic-areas-thumb {
+  @include media(min, tablet) {
+    @include flex-l(40px, flex-start, flex-start);
+  }
+
+  @include media(min, desktop) {
+    @include flex-l(30px, flex-start, flex-start);
+    width: 720px;
+  }
+}
+
+.areas-subtitle {
+  margin-bottom: 15px;
+  font-weight: 700;
+  @include font-size(14px, 18px);
+  text-align: center;
+
+  @include media(min, tablet) {
+    width: 195px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  @include media(min, desktop) {
+    flex-basis: calc((100% - 30px) * 0.2);
+    @include font-size(18px, 28px);
+  }
+}
+
+.areas-list {
+  @extend %list;
+
+  @include media(min, tablet) {
+    width: 500px;
+  }
+
+  @include media(min, desktop) {
+    flex-basis: calc((100% - 30px) * 0.8);
+  }
+}
+
+.areas-item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+
+    @include media(min, desktop) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include media(min, tablet) {
+    text-align: left;
+  }
+
+  @include media(min, desktop) {
+    @include font-size(18px, 28px);
+  }
+}

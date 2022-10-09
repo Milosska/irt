@@ -1,0 +1,110 @@
+.deadlines {
+  @extend %section;
+  background-color: map-get($bgcolor, 'second-accent');
+  text-align: center;
+}
+
+.deadlines-container {
+  @extend %container;
+}
+
+.deadlines-title {
+  @extend %section-title;
+  margin-bottom: 15px;
+
+  @include media(min, tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.deadlines-list {
+  @extend %list;
+  @extend %centred;
+
+  @include media(min, tablet) {
+    @include flex-l(30px);
+  }
+
+  @include media(min, desktop) {
+    @include flex-l(40px);
+    flex-wrap: nowrap;
+  }
+}
+
+.deadlines-item {
+  position: relative;
+
+  min-height: 150px;
+  padding: 30px 20px;
+  margin-bottom: 15px;
+
+  background-color: map-get($bgcolor, 'accent');
+  transform: scale(1);
+  @include animation-m(background-color, transform);
+
+  &:hover {
+    background-color: map-get($bgcolor, 'main');
+  }
+
+  @include media(max, tablet) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: map-get($breakpoints, 'phone')) and (max-width: (map-get($breakpoints, 'tablet')) - 0.5px) {
+    @include flex-m;
+  }
+
+  @include media(min, tablet) {
+    @include flex-basis(2, 30px);
+    padding: 35px 15px;
+  }
+
+  @include media(min, desktop) {
+    flex-basis: 280px;
+    height: 280px;
+    padding: 40px 20px 20px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.deadlines-icon {
+  width: 82px;
+  height: 82px;
+
+  @include media(min, desktop) {
+    margin-bottom: 15px;
+  }
+}
+
+.deadlines-thumb {
+  @extend %centred;
+
+  @include media(min, tablet) {
+    max-width: 225px;
+  }
+}
+
+.deadlines-dates {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  @include font-size(18px, 22px);
+  text-transform: uppercase;
+
+  @include media(min, desktop) {
+    margin-bottom: 15px;
+    @include font-size(21px, 20px);
+    letter-spacing: 1.083px;
+  }
+}
+
+.deadlines-text {
+  @include font-size(18px, 22px);
+
+  @include media(min, desktop) {
+    @include font-size(22px, 30px);
+  }
+}

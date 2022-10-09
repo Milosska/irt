@@ -526,7 +526,7 @@ button {
 } */
 
 /*---------------------- deadlines section ---------------------------------*/
-.deadlines {
+/* .deadlines {
   background-color: var(--bcg-second-accent);
   padding: 50px 0;
 
@@ -567,7 +567,7 @@ button {
   line-height: 0.95;
   letter-spacing: 1.083px;
   text-transform: uppercase;
-}
+} */
 
 /*---------------------- information section ---------------------------------*/
 .information {

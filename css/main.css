@@ -41,39 +41,39 @@ button {
 }
 
 /* ================= main placeholders ===============*/
-.audience-container, .organized-container, .about-container, .hero-container, .header-container {
+.deadlines-container, .audience-container, .organized-container, .about-container, .hero-container, .header-container {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
-  .audience-container, .organized-container, .about-container, .hero-container, .header-container {
+  .deadlines-container, .audience-container, .organized-container, .about-container, .hero-container, .header-container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .audience-container, .organized-container, .about-container, .hero-container, .header-container {
+  .deadlines-container, .audience-container, .organized-container, .about-container, .hero-container, .header-container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .audience-container, .organized-container, .about-container, .hero-container, .header-container {
+  .deadlines-container, .audience-container, .organized-container, .about-container, .hero-container, .header-container {
     width: 1200px;
   }
 }
 
-.join, .organized, .about-event {
+.deadlines, .join, .organized, .about-event {
   padding-top: 45px;
   padding-bottom: 45px;
 }
 @media screen and (min-width: 1200px) {
-  .join, .organized, .about-event {
+  .deadlines, .join, .organized, .about-event {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 }
 
-.audience-list, .organized-list, .about-btn, .header-social-list, .language, .navigation-list {
+.deadlines-list, .audience-list, .organized-list, .about-btn, .header-social-list, .language, .navigation-list {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -85,21 +85,21 @@ button {
   color: inherit;
 }
 
-.join-title, .organized-title, .about-title {
+.deadlines-title, .join-title, .organized-title, .about-title {
   font-weight: 700;
   font-size: 22px;
   line-height: 36px;
   letter-spacing: -0.015em;
 }
 @media screen and (min-width: 1200px) {
-  .join-title, .organized-title, .about-title {
+  .deadlines-title, .join-title, .organized-title, .about-title {
     font-size: 38px;
   }
 }
 
 /* =================== visually-hidden =================*/
 /* =================== centerd element pattern =================*/
-.video-placeholder {
+.deadlines-thumb, .deadlines-list, .video-placeholder {
   margin-left: auto;
   margin-right: auto;
 }
@@ -1380,4 +1380,152 @@ button {
 .audience-text {
   font-size: 18px;
   line-height: 1.5555555556;
+}
+
+.deadlines {
+  background-color: #e1f1ff;
+  text-align: center;
+}
+
+.deadlines-title {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .deadlines-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .deadlines-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .deadlines-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.deadlines-item {
+  position: relative;
+  min-height: 150px;
+  padding: 30px 20px;
+  margin-bottom: 15px;
+  background-color: #fff8ee;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.deadlines-item:hover {
+  background-color: #feedd5;
+}
+@media screen and (max-width: 767.5px) {
+  .deadlines-item {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
+  .deadlines-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .deadlines-item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    padding: 35px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .deadlines-item {
+    -ms-flex-preferred-size: 280px;
+        flex-basis: 280px;
+    height: 280px;
+    padding: 40px 20px 20px;
+  }
+  .deadlines-item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.deadlines-icon {
+  width: 82px;
+  height: 82px;
+}
+@media screen and (min-width: 1200px) {
+  .deadlines-icon {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .deadlines-thumb {
+    max-width: 225px;
+  }
+}
+
+.deadlines-dates {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .deadlines-dates {
+    margin-bottom: 15px;
+    font-size: 21px;
+    line-height: 0.9523809524;
+    letter-spacing: 1.083px;
+  }
+}
+
+.deadlines-text {
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+@media screen and (min-width: 1200px) {
+  .deadlines-text {
+    font-size: 22px;
+    line-height: 1.3636363636;
+  }
 }/*# sourceMappingURL=main.css.map */

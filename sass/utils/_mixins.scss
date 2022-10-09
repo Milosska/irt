@@ -8,12 +8,14 @@
 @mixin flex-s($y: center) {
   display: flex;
   align-items: $y;
+  flex-wrap: wrap;
 }
 
 @mixin flex-m($x: center, $y: center) {
   display: flex;
   justify-content: $x;
   align-items: $y;
+  flex-wrap: wrap;
 }
 
 @mixin flex-l($gap, $x: center, $y: center) {
@@ -21,6 +23,7 @@
   gap: $gap;
   justify-content: $x;
   align-items: $y;
+  flex-wrap: wrap;
 }
 
 @mixin flex-basis($n, $gap) {

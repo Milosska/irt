@@ -394,7 +394,7 @@ button {
 } */
 
 /*---------------------- organizers section ------------------*/
-.organized {
+/* .organized {
   background-color: var(--bcg-first-accent);
 }
 .organized-container {
@@ -471,7 +471,7 @@ button {
   backdrop-filter: blur(2px);
 
   transform: scale(1.2);
-}
+} */
 
 /*-------------------- audience section -----------------------------------*/
 .join {

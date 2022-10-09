@@ -43,6 +43,7 @@
 
 .about-title {
   @extend %section-title;
+  margin-bottom: 10px;
 
   @include media(min, desktop) {
     margin-bottom: 15px;

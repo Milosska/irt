@@ -4,26 +4,64 @@
   margin: 0 auto;
   background-color: map-get($bgcolor, 'main');
 
-  background-image: url('../../../pictures/hero/phone-archive-hero.jpg');
+  background-image: url('../pictures/hero/phone-archive-hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../../../pictures/hero/phone-archive-hero@2x.jpg');
+    background-image: url('../pictures/hero/phone-archive-hero@2x.jpg');
   }
 
   @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-    background-image: url('../pictures/hero/../../../pictures/hero/phone-archive-hero@3x.jpg');
+    background-image: url('../pictures/hero/phone-archive-hero@3x.jpg');
+  }
+
+  @include media(min, tablet) {
+    max-width: 768px;
+    height: 353px;
+    background-image: url('../pictures/hero/tablet-archive-hero.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../pictures/hero/tablet-archive-hero@2x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url('../pictures/hero/tablet-archive-hero@3x.jpg');
+    }
+  }
+
+  @include media(min, desktop) {
+    max-width: 1480px;
+    height: 742px;
+    background-image: url('../pictures/hero/desktop-archive-hero.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../pictures/hero/desktop-archive-hero@2x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url('../pictures/hero/desktop-archive-hero@3x.jpg');
+    }
   }
 }
 
 .arch-container {
   @extend %container;
-  margin-left: 15px;
-  max-width: 320px;
+  margin-left: 0;
+  padding-left: 30px;
   padding-top: 45px;
-  padding-bottom: 150px;
+
+  @include media(min, tablet) {
+    padding-left: 60px;
+    padding-top: 30px;
+  }
+
+  @include media(min, desktop) {
+    margin-left: 100px;
+    padding-left: 82px;
+    padding-top: 60px;
+  }
 }
 
 .arch-title {
@@ -33,30 +71,85 @@
   @include font-size(22px, 32px);
   letter-spacing: -1.5px;
   text-transform: uppercase;
+
+  @include media(min, tablet) {
+    @include font-size(32px, 42px);
+  }
+
+  @include media(min, desktop) {
+    margin-bottom: 30px;
+    @include font-size(46px, 64px);
+  }
 }
 
 .arch-subtitle {
+  max-width: 280px;
   margin-bottom: 15px;
 
   font-weight: 700;
   @include font-size(18px, 22px);
   letter-spacing: -1px;
+
+  @include media(min, tablet) {
+    max-width: 320px;
+    @include font-size(22px, 26px);
+  }
+
+  @include media(min, desktop) {
+    max-width: 700px;
+    margin-bottom: 30px;
+    @include font-size(36px, 48px);
+  }
 }
 
 .arch-text {
+  max-width: 280px;
   margin-bottom: 15px;
 
   @include font-size(18px, 22px);
   letter-spacing: -1px;
+
+  @include media(min, phone) {
+    max-width: 320px;
+  }
+
+  @include media(min, tablet) {
+    max-width: 380px;
+    @include font-size(22px, 26px);
+  }
+
+  @include media(min, desktop) {
+    max-width: 600px;
+    margin-bottom: 30px;
+    @include font-size(32px, 48px);
+  }
 }
 
 .arch-year {
   @include font-size(18px, 22px);
   letter-spacing: -1px;
+
+  @include media(min, tablet) {
+    @include font-size(22px, 26px);
+  }
+
+  @include media(min, desktop) {
+    @include font-size(32px, 48px);
+  }
 }
 
 .year-2022 {
+  margin-left: 15px;
+
   font-weight: 700;
   @include font-size(18px, 22px);
   letter-spacing: -1px;
+
+  @include media(min, tablet) {
+    @include font-size(22px, 26px);
+  }
+
+  @include media(min, desktop) {
+    @include font-size(32px, 48px);
+  }
 }

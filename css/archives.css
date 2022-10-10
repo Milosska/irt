@@ -816,27 +816,73 @@ button {
   height: 400px;
   margin: 0 auto;
   background-color: #feedd5;
-  background-image: url("../../../pictures/hero/phone-archive-hero.jpg");
+  background-image: url("../pictures/hero/phone-archive-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .arch-hero {
-    background-image: url("../../../pictures/hero/phone-archive-hero@2x.jpg");
+    background-image: url("../pictures/hero/phone-archive-hero@2x.jpg");
   }
 }
 @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .arch-hero {
-    background-image: url("../pictures/hero/../../../pictures/hero/phone-archive-hero@3x.jpg");
+    background-image: url("../pictures/hero/phone-archive-hero@3x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .arch-hero {
+    max-width: 768px;
+    height: 353px;
+    background-image: url("../pictures/hero/tablet-archive-hero.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .arch-hero {
+    background-image: url("../pictures/hero/tablet-archive-hero@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .arch-hero {
+    background-image: url("../pictures/hero/tablet-archive-hero@3x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arch-hero {
+    max-width: 1480px;
+    height: 742px;
+    background-image: url("../pictures/hero/desktop-archive-hero.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .arch-hero {
+    background-image: url("../pictures/hero/desktop-archive-hero@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .arch-hero {
+    background-image: url("../pictures/hero/desktop-archive-hero@3x.jpg");
   }
 }
 
 .arch-container {
-  margin-left: 15px;
-  max-width: 320px;
+  margin-left: 0;
+  padding-left: 30px;
   padding-top: 45px;
-  padding-bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  .arch-container {
+    padding-left: 60px;
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arch-container {
+    margin-left: 100px;
+    padding-left: 82px;
+    padding-top: 60px;
+  }
 }
 
 .arch-title {
@@ -847,20 +893,70 @@ button {
   letter-spacing: -1.5px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .arch-title {
+    font-size: 32px;
+    line-height: 1.3125;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arch-title {
+    margin-bottom: 30px;
+    font-size: 46px;
+    line-height: 1.3913043478;
+  }
+}
 
 .arch-subtitle {
+  max-width: 280px;
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: -1px;
 }
+@media screen and (min-width: 768px) {
+  .arch-subtitle {
+    max-width: 320px;
+    font-size: 22px;
+    line-height: 1.1818181818;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arch-subtitle {
+    max-width: 700px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 1.3333333333;
+  }
+}
 
 .arch-text {
+  max-width: 280px;
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: -1px;
+}
+@media screen and (min-width: 480px) {
+  .arch-text {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .arch-text {
+    max-width: 380px;
+    font-size: 22px;
+    line-height: 1.1818181818;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arch-text {
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 1.5;
+  }
 }
 
 .arch-year {
@@ -868,12 +964,37 @@ button {
   line-height: 1.2222222222;
   letter-spacing: -1px;
 }
+@media screen and (min-width: 768px) {
+  .arch-year {
+    font-size: 22px;
+    line-height: 1.1818181818;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .arch-year {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
 
 .year-2022 {
+  margin-left: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: -1px;
+}
+@media screen and (min-width: 768px) {
+  .year-2022 {
+    font-size: 22px;
+    line-height: 1.1818181818;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .year-2022 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
 }
 
 .footer {

@@ -13,57 +13,159 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- Favicon end -->
-    <title>
-      International Round Table «Sustainable consumption in restaurant industry»
-    </title>
+    <title>International Round Table «Sustainable consumption in restaurant industry»</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Modern-nornalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="./css/archives.min.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <ul class="navigation-list list">
-          <li class="navigation-list-item">
-            <a class="link" href="#about">About</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="link" href="#organizers">Organizers</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="link" href="#audience">Audience</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="link" href="#deadlines">Deadlines</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="link" href="#requirements">Requirements</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="link" href="./archives.html">Archives</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="list">
-        <li><button class="header-btn" type="button">Participate</button></li>
-        <li><button class="header-btn" type="button">Contact Us</button></li>
-      </ul>
+      <div class="header-container">
+        <div class="nav-thumb">
+          <!------------ Logo------------->
+          <a class="logo-link link" href="./index.html">
+            <svg class="logo-img">
+              <use href="./pictures/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <!------------ Mobile menu------------->
+          <div class="menu js-menu-container">
+            <!------------ Mobile menu open btn------------->
+            <button
+              class="menu-btn menu-btn--open js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              type="button"
+            >
+              <svg class="menu-icon" area-label="Перемикач мобільного меню">
+                <use href="./pictures/sprite.svg#menu-open"></use>
+              </svg>
+            </button>
+            <!------------ Mobile menu container------------->
+            <div class="mobile-thumb">
+              <!------------ Mobile menu close btn------------->
+              <button class="menu-btn menu-btn--close js-close-menu" type="button">
+                <svg class="menu-icon" area-label="Перемикач мобільного меню">
+                  <use href="./pictures/sprite.svg#menu-close"></use>
+                </svg>
+              </button>
+              <!------------ Navigation------------->
+              <nav class="navigation">
+                <ul class="navigation-list">
+                  <li class="navigation-list-item">
+                    <a class="nav-link" href="./index.html#about">About</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link" href="./index.html#organizers">Organizers</a>
+                  </li>
+                  <li class="navigation-list-item navigation-list-item--hidden">
+                    <a class="nav-link nav-link" href="./index.html#audience">Audience</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link" href="./index.html#deadlines">Deadlines</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link" href="./index.html#requirements">Requirements</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="nav-link" href="./archives.html">Archives</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="bottom-thumb">
+                <!------------ Languages------------->
+                <ul class="language">
+                  <li class="language-item">
+                    <a href="" class="language-link language-link--current">EN</a>
+                  </li>
+                  <li class="language-item"><a href="" class="language-link">UA</a></li>
+                </ul>
+                <!------------ Mail------------->
+                <a class="header-link" href="mailto:roundtabletrap@gmail.com"
+                  >roundtabletrap@gmail.com</a
+                >
+                <!------------ Socials------------->
+                <ul class="header-social-list">
+                  <li class="header-social-item">
+                    <a
+                      class="header-social-link"
+                      href="http://triap.nuft.edu.ua"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="web-site"
+                    >
+                      <svg class="header-link-icon">
+                        <use href="./pictures/sprite.svg#globe"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="header-social-item">
+                    <a
+                      class="header-social-link"
+                      href="https://www.facebook.com/kafedratrap/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="facebook"
+                    >
+                      <svg class="header-link-icon">
+                        <use href="./pictures/sprite.svg#facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="header-social-item">
+                    <a
+                      class="header-social-link"
+                      href="https://www.instagram.com/kafedratrap/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="instagram"
+                    >
+                      <svg class="header-link-icon">
+                        <use href="./pictures/sprite.svg#instagram"></use></svg
+                    ></a>
+                  </li>
+                  <li class="header-social-item">
+                    <a
+                      class="header-social-link"
+                      href="https://www.youtube.com/channel/UCNO4v6NhgMdwyhpQQAc_-pw"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="youtube"
+                    >
+                      <svg class="header-link-icon">
+                        <use href="./pictures/sprite.svg#youtube"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="arch-hero">
-        <h1 class="arch-title">Archives</h1>
-        <p class="arch-subtitle">
-          of the International Round Table “Sustainable Consumption in
-          Restaurant Industry”
-        </p>
-        <p class="arch-text">
-          National University of Food Technologies, Kyiv, Ukraine
-        </p>
-        <p class="arch-year">Year: <span class="year-2022">2022</span></p>
+        <div class="arch-container">
+          <h1 class="arch-title">Archives</h1>
+          <p class="arch-subtitle">
+            of the International Round Table “Sustainable Consumption in Restaurant Industry”
+          </p>
+          <p class="arch-text">National University of Food Technologies, Kyiv, Ukraine</p>
+          <p class="arch-year">Year: <span class="year-2022">2022</span></p>
+        </div>
       </section>
       <section class="sponsors">
         <ul class="sponsors-list list">
@@ -94,31 +196,29 @@
               href="https://lsu.edu.az/new/eng/LSU.php"
               target="_blank"
               rel="noreferrer noopener"
-              >Lankaran State University of the Ministry of Education of the
-              Republic of Azerbaijan</a
+              >Lankaran State University of the Ministry of Education of the Republic of
+              Azerbaijan</a
             >
           </li>
         </ul>
         <h2 class="sponsors-title">Organizers</h2>
         <p class="sponsors-text">
-          The Department of Technology of Restaurant and Ayurvedic Products of
-          National University of Food Technologies organized the event jointly
-          with presented partners.
+          The Department of Technology of Restaurant and Ayurvedic Products of National University
+          of Food Technologies organized the event jointly with presented partners.
         </p>
       </section>
       <section class="speakers">
         <h2 class="speakers-title">Speakers</h2>
         <p class="speakers-text">
-          Leading experts and scientists gave reports on innovations and trends
-          in the restaurant industry
+          Leading experts and scientists gave reports on innovations and trends in the restaurant
+          industry
         </p>
         <ul class="speakers-list list">
           <li class="speakers-item">
             <p class="speaker-name">Zyiko Vira</p>
             <p class="speaker-position">
-              PhD, Assistant Professor, Department of the Technology of
-              Restaurant and Ayurvedic Products, National University of Food
-              Technologies
+              PhD, Assistant Professor, Department of the Technology of Restaurant and Ayurvedic
+              Products, National University of Food Technologies
             </p>
             <h3 class="thesis-title">
               &quot;Analysis of modern trends in restaurant industry&quot;
@@ -127,44 +227,42 @@
           <li class="speakers-item">
             <p class="speaker-name">Frolova Natalia</p>
             <p class="speaker-position">
-              Dr. Tech. Sc., Professor, Department of the Technology of
-              Restaurant and Ayurvedic Products, National University of Food
-              Technologies
+              Dr. Tech. Sc., Professor, Department of the Technology of Restaurant and Ayurvedic
+              Products, National University of Food Technologies
             </p>
             <h3 class="thesis-title">
-              &quot;Fooding according to Ayurveda in the qualification works of
-              the Master's degree&quot;
+              &quot;Fooding according to Ayurveda in the qualification works of the Master's
+              degree&quot;
             </h3>
           </li>
           <li class="speakers-item">
             <p class="speaker-name">Honchar Yuliia</p>
             <p class="speaker-position">
-              PhD, Senior Lecturer, Department of technology and organization of
-              restaurant business, State University of Trade and Economics
+              PhD, Senior Lecturer, Department of technology and organization of restaurant
+              business, State University of Trade and Economics
             </p>
             <h3 class="thesis-title">
-              &quot;Features of production of low lactose products on the basis
-              of secondary milk raw materials – milk whey&quot;
+              &quot;Features of production of low lactose products on the basis of secondary milk
+              raw materials – milk whey&quot;
             </h3>
           </li>
           <li class="speakers-item">
             <p class="speaker-name">Yus Aniza Yusof</p>
             <p class="speaker-position">
-              Deputy Director of Halal Products Research Institute, Professor,
-              Department of Process and Food Engineering, Universiti Putra
-              Malaysia (UPM)
+              Deputy Director of Halal Products Research Institute, Professor, Department of Process
+              and Food Engineering, Universiti Putra Malaysia (UPM)
             </p>
             <h3 class="thesis-title">&quot;Halal food processing&quot;</h3>
           </li>
           <li class="speakers-item">
             <p class="speaker-name">Shankaraswamy J.</p>
             <p class="speaker-position">
-              Assistant Professor, Head of Post harvest Technology, Sri Konda
-              Laxman Telangana State Horticultural University
+              Assistant Professor, Head of Post harvest Technology, Sri Konda Laxman Telangana State
+              Horticultural University
             </p>
             <h3 class="thesis-title">
-              &quot;Conventional fruit wine – provider of new generation
-              functional food for restaurants&quot;
+              &quot;Conventional fruit wine – provider of new generation functional food for
+              restaurants&quot;
             </h3>
           </li>
           <li class="speakers-item">
@@ -202,78 +300,103 @@
       </section>
     </main>
     <footer class="footer">
-      <h2 class="footer-title">Contact Us</h2>
-      <address class="address">
-        <ul class="address-list list">
-          <li class="address-item">
-            <a
-              class="address-link link"
-              href="https://www.google.com.ua/maps/place/ул.+Владимирская,+68,+Киев,+02000/@50.4384927,30.509999,17z"
-              target="_blank"
-              rel="noreferrer noopener"
-              >68 Volodymyrska str., 01601 Kyiv, Ukraine</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="mail-link link" href="mailto:roundtabletrap@gmail.com"
-              >roundtabletrap@gmail.com</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="first-tel-link link" href="tel:+380631356063"
-              >+38 063 135 60 63</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="second-tel-link link" href="tel:+380934001875"
-              >+380 93 400 18 75</a
-            >
-          </li>
-        </ul>
-      </address>
-      <p>
-        &copy;Department of Technology of Restaurant and Ayurvedic Products,
-        NUFT
-      </p>
-      <h2 class="social-title">Follow us:</h2>
-      <ul class="social-list list">
-        <li class="social-item">
-          <a
-            class="web-link"
-            href="http://triap.nuft.edu.ua"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="web-site"
-          ></a>
-        </li>
-        <li class="social-item">
-          <a
-            class="facebook-link"
-            href="https://www.facebook.com/kafedratrap/"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="facebook"
-          ></a>
-        </li>
-        <li class="social-item">
-          <a
-            class="instagram-link"
-            href="https://www.instagram.com/kafedratrap/"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="instagram"
-          ></a>
-        </li>
-        <li class="social-item">
-          <a
-            class="youtube-link"
-            href="https://www.youtube.com/channel/UCNO4v6NhgMdwyhpQQAc_-pw"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="youtube"
-          ></a>
-        </li>
-      </ul>
+      <div class="footer-container" data-aos="fade-right" data-aos-duration="2000">
+        <div class="footer-flex-thumb">
+          <div class="address-thumb">
+            <h2 class="footer-title">Contact Us</h2>
+            <address class="address">
+              <ul class="address-list">
+                <li class="address-item">
+                  <a
+                    class="address-link"
+                    href="https://www.google.com.ua/maps/place/ул.+Владимирская,+68,+Киев,+02000/@50.4384927,30.509999,17z"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >68 Volodymyrska str., 01601 Kyiv, Ukraine</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a class="address-link link" href="mailto:roundtabletrap@gmail.com"
+                    >roundtabletrap@gmail.com</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a class="address-link link" href="tel:+380631356063">+38 063 135 60 63</a>
+                </li>
+                <li class="address-item">
+                  <a class="address-link link" href="tel:+380934001875">+380 93 400 18 75</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-thumb">
+            <h2 class="social-title">Follow us:</h2>
+            <ul class="social-list">
+              <li class="social-item">
+                <a
+                  class="footer-link"
+                  href="http://triap.nuft.edu.ua"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="web-site"
+                >
+                  <svg class="footer-link-icon">
+                    <use href="./pictures/sprite.svg#globe"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="footer-link"
+                  href="https://www.facebook.com/kafedratrap/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="facebook"
+                >
+                  <svg class="footer-link-icon">
+                    <use href="./pictures/sprite.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="footer-link"
+                  href="https://www.instagram.com/kafedratrap/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="instagram"
+                >
+                  <svg class="footer-link-icon">
+                    <use href="./pictures/sprite.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="footer-link"
+                  href="https://www.youtube.com/channel/UCNO4v6NhgMdwyhpQQAc_-pw"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="youtube"
+                >
+                  <svg class="footer-link-icon">
+                    <use href="./pictures/sprite.svg#youtube"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy;Department of Technology of Restaurant and Ayurvedic Products, NUFT
+        </p>
+      </div>
     </footer>
+
+    <!-- Mobile menu action -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

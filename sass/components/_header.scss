@@ -209,12 +209,14 @@
 .language-item {
   display: inline-block;
 
-  &:first-child {
-    padding-right: 5px;
-    border-right: 1px solid map-get($txtcolor, 'main');
-  }
-  &:last-child {
-    padding-left: 5px;
+  @include media(min, tablet) {
+    &:first-child {
+      padding-right: 5px;
+      border-right: 1px solid map-get($txtcolor, 'main');
+    }
+    &:last-child {
+      padding-left: 5px;
+    }
   }
 }
 
@@ -307,7 +309,7 @@
 
 .header-social-link {
   @extend %link;
-  @include socials(50px, 50px);
+  @include socials(45px, 45px);
 
   @include media(min, phone) {
     @include socials(75px, 75px);
@@ -315,8 +317,8 @@
 }
 
 .header-link-icon {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 
   @include media(min, phone) {
     width: 75px;

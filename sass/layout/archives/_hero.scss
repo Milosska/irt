@@ -1,0 +1,62 @@
+.arch-hero {
+  max-width: 480px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: map-get($bgcolor, 'main');
+
+  background-image: url('../../../pictures/hero/phone-archive-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../../../pictures/hero/phone-archive-hero@2x.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: url('../pictures/hero/../../../pictures/hero/phone-archive-hero@3x.jpg');
+  }
+}
+
+.arch-container {
+  @extend %container;
+  margin-left: 15px;
+  max-width: 320px;
+  padding-top: 45px;
+  padding-bottom: 150px;
+}
+
+.arch-title {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  @include font-size(22px, 32px);
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+
+.arch-subtitle {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  @include font-size(18px, 22px);
+  letter-spacing: -1px;
+}
+
+.arch-text {
+  margin-bottom: 15px;
+
+  @include font-size(18px, 22px);
+  letter-spacing: -1px;
+}
+
+.arch-year {
+  @include font-size(18px, 22px);
+  letter-spacing: -1px;
+}
+
+.year-2022 {
+  font-weight: 700;
+  @include font-size(18px, 22px);
+  letter-spacing: -1px;
+}

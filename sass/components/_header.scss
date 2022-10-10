@@ -6,6 +6,10 @@
   @extend %container;
 }
 
+.animate__fadeInDown {
+  animation-duration: 2s;
+}
+
 .nav-thumb {
   @include media(max, tablet) {
     @include flex-m(space-between, center);

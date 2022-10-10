@@ -99,7 +99,7 @@
 $pictureList: 'nuft', 'india', 'azerbaijan';
 @each $picture in $pictureList {
   .#{$picture}-link {
-    background-image: url('../../pictures/partners/#{$picture}.png');
+    background-image: url('../pictures/partners/#{$picture}.png');
     background-size: 160px;
   }
 }

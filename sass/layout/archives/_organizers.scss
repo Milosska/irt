@@ -7,14 +7,14 @@
   @extend %container;
 
   @include media(min, desktop) {
-    @include flex-l(60px, flex-start, center);
+    @include flex-l(45px, flex-start, center);
     flex-direction: row-reverse;
   }
 }
 
 .organized-left {
   @include media(min, desktop) {
-    flex-basis: calc((100% - 60px) * 0.25);
+    flex-basis: calc((100% - 45px) * 0.3);
   }
 }
 
@@ -49,7 +49,7 @@
 
 .organized-right {
   @include media(min, desktop) {
-    flex-basis: calc((100% - 60px) * 0.75);
+    flex-basis: calc((100% - 45px) * 0.7);
   }
 }
 
@@ -87,8 +87,8 @@
   }
 
   @include media(min, desktop) {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     @include font-size(22px, 32px);
   }
 }
@@ -96,7 +96,7 @@
 $pictureList: 'nuft', 'india', 'azerbaijan';
 @each $picture in $pictureList {
   .#{$picture}-link {
-    background-image: url('../../pictures/partners/#{$picture}.png');
+    background-image: url('../pictures/partners/#{$picture}.png');
     background-size: 160px;
   }
 }

@@ -117,6 +117,11 @@ button {
   background-color: #8cc9ff;
 }
 
+.animate__fadeInDown {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 @media screen and (max-width: 767.5px) {
   .nav-thumb {
     display: -webkit-box;
@@ -908,6 +913,11 @@ button {
   }
 }
 
+.animate__fadeInRight {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .arch-title {
   margin-bottom: 15px;
   font-weight: 700;
@@ -1029,7 +1039,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 60px;
+    gap: 45px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1047,8 +1057,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .organized-left {
-    -ms-flex-preferred-size: calc((100% - 60px) * 0.25);
-        flex-basis: calc((100% - 60px) * 0.25);
+    -ms-flex-preferred-size: calc((100% - 45px) * 0.3);
+        flex-basis: calc((100% - 45px) * 0.3);
   }
 }
 
@@ -1087,8 +1097,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .organized-right {
-    -ms-flex-preferred-size: calc((100% - 60px) * 0.75);
-        flex-basis: calc((100% - 60px) * 0.75);
+    -ms-flex-preferred-size: calc((100% - 45px) * 0.7);
+        flex-basis: calc((100% - 45px) * 0.7);
   }
 }
 
@@ -1154,25 +1164,25 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .organized-link {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     font-size: 22px;
     line-height: 1.4545454545;
   }
 }
 
 .nuft-link {
-  background-image: url("../../pictures/partners/nuft.png");
+  background-image: url("../pictures/partners/nuft.png");
   background-size: 160px;
 }
 
 .india-link {
-  background-image: url("../../pictures/partners/india.png");
+  background-image: url("../pictures/partners/india.png");
   background-size: 160px;
 }
 
 .azerbaijan-link {
-  background-image: url("../../pictures/partners/azerbaijan.png");
+  background-image: url("../pictures/partners/azerbaijan.png");
   background-size: 160px;
 }
 

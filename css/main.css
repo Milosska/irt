@@ -122,6 +122,11 @@ button {
   background-color: #8cc9ff;
 }
 
+.animate__fadeInDown {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 @media screen and (max-width: 767.5px) {
   .nav-thumb {
     display: -webkit-box;
@@ -913,6 +918,11 @@ button {
   }
 }
 
+.animate__zoomIn {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .uppertitle {
   margin-bottom: 15px;
   font-size: 18px;
@@ -1273,17 +1283,17 @@ button {
 }
 
 .nuft-link {
-  background-image: url("../../pictures/partners/nuft.png");
+  background-image: url("../pictures/partners/nuft.png");
   background-size: 160px;
 }
 
 .india-link {
-  background-image: url("../../pictures/partners/india.png");
+  background-image: url("../pictures/partners/india.png");
   background-size: 160px;
 }
 
 .azerbaijan-link {
-  background-image: url("../../pictures/partners/azerbaijan.png");
+  background-image: url("../pictures/partners/azerbaijan.png");
   background-size: 160px;
 }
 

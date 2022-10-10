@@ -1,0 +1,62 @@
+.gallery {
+  @extend %section;
+  background-color: map-get($bgcolor, 'accent');
+}
+
+.gallery-container {
+  @extend %container;
+}
+
+.gallery-title {
+  @extend %section-title;
+  margin-bottom: 15px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 38px;
+  height: 38px;
+  background-color: map-get($bgcolor, 'main');
+  border-radius: 50%;
+
+  opacity: 0;
+  @include animation-s(opacity);
+
+  &::after {
+    color: map-get($txtcolor, 'main');
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  @include media(min, phone) {
+    width: 50px;
+    height: 50px;
+
+    &::after {
+      font-size: 30px;
+    }
+  }
+
+  @include media(min, tablet) {
+    width: 72px;
+    height: 72px;
+
+    &::after {
+      font-size: 42px;
+    }
+  }
+
+  @include media(min, desktop) {
+    width: 100px;
+    height: 100px;
+
+    &::after {
+      font-size: 42px;
+    }
+  }
+}

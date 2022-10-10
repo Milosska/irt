@@ -29,6 +29,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <!-- CSS styles -->
     <link rel="stylesheet" href="./css/archives.min.css" />
   </head>
@@ -301,22 +304,231 @@
         </div>
       </section>
       <section class="gallery">
-        <h2 class="gallery-title">Gallery</h2>
-        <img
-          src="./pictures/gallery/Rectangle.jpg"
-          alt="conference photo"
-          class="gallery-photo"
-          width="750"
-          height="484"
-        />
-        <ul class="gallery-btn-list list">
-          <li class="gallery-btn-item">
-            <button class="gallery-btn" type="button">Back</button>
-          </li>
-          <li class="gallery-btn-item">
-            <button class="gallery-btn" type="button">Forward</button>
-          </li>
-        </ul>
+        <div class="gallery-container">
+          <h2 class="gallery-title">Gallery</h2>
+          <!-- Slider-containers -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-1.webp 1x, ./pictures/gallery/photo-1@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-1.jpg 1x, ./pictures/gallery/photo-1@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-1.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-2.webp 1x, ./pictures/gallery/photo-2@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-2.jpg 1x, ./pictures/gallery/photo-2@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-2.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-3.webp 1x, ./pictures/gallery/photo-3@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-3.jpg 1x, ./pictures/gallery/photo-3@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-3.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-4.webp 1x, ./pictures/gallery/photo-4@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-4.jpg 1x, ./pictures/gallery/photo-4@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-4.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-5.webp 1x, ./pictures/gallery/photo-5@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-5.jpg 1x, ./pictures/gallery/photo-5@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-5.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-6.webp 1x, ./pictures/gallery/photo-6@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-6.jpg 1x, ./pictures/gallery/photo-6@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-6.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-7.webp 1x, ./pictures/gallery/photo-7@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-7.jpg 1x, ./pictures/gallery/photo-7@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-7.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-8.webp 1x, ./pictures/gallery/photo-8@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-8.jpg 1x, ./pictures/gallery/photo-8@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-8.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-9.webp 1x, ./pictures/gallery/photo-9@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./pictures/gallery/photo-9.jpg 1x, ./pictures/gallery/photo-9@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-9.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-10.webp 1x, ./pictures/gallery/photo-10@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./pictures/gallery/photo-10.jpg    1x,
+                      ./pictures/gallery/photo-10@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-10.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-11.webp 1x, ./pictures/gallery/photo-11@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./pictures/gallery/photo-11.jpg    1x,
+                      ./pictures/gallery/photo-11@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-11.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./pictures/gallery/photo-12.webp 1x, ./pictures/gallery/photo-12@2x.jpg webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./pictures/gallery/photo-12.jpg    1x,
+                      ./pictures/gallery/photo-12@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./pictures/gallery/photo-12.jpg"
+                    alt="Event printscreen"
+                    class="swiper-img"
+                  />
+                </picture>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -418,5 +630,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/mobile-menu.js"></script>
+
+    <!-- Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

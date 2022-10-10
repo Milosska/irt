@@ -68,14 +68,12 @@
     @include flex-l(15px, flex-start, center);
     flex-direction: column;
   }
-  //   display: flex;
-  //   gap: 55px;
 }
 
 .about-link {
   @extend %link;
   display: inline-block;
-  min-width: 100px;
+  min-width: 190px;
   padding: 11px;
   background-color: map-get($txtcolor, 'main');
   border: 1px solid map-get($txtcolor, 'main');
@@ -93,42 +91,8 @@
     color: map-get($txtcolor, 'main');
   }
 
-  @include media(min, phone) {
-    min-width: 150px;
-  }
-
   @include media(min, desktop) {
-    min-width: 230px;
-    @include font-size(26px, 33px);
+    min-width: 250px;
+    @include font-size(22px, 26px);
   }
 }
-
-// .about-left {
-//   padding-top: 90px;
-//   padding-bottom: 90px;
-// }
-// .about-right {
-//   padding-top: 95px;
-//   padding-bottom: 100px;
-// }
-
-// .about-btn {
-//   display: inline-block;
-//   min-width: 230px;
-//   padding-top: 16px;
-//   padding-bottom: 16px;
-//   border-radius: 6px;
-//   background-color: var(--button-general);
-
-//   font-weight: 500;
-//   font-size: 26px;
-//   line-height: 1.3;
-//   text-align: center;
-
-//   transition: color var(--animation-action), background-color var(--animation-action);
-// }
-// .about-btn:hover,
-// .about-btn:focus {
-//   background-color: var(--button-accent);
-//   color: var(--accent-text);
-// }

@@ -1491,8 +1491,8 @@ button {
               transform: translateX(0) translateY(0);
     }
     100% {
-      -webkit-transform: translateX(0) translateY(25px);
-              transform: translateX(0) translateY(25px);
+      -webkit-transform: translateX(0) translateY(27px);
+              transform: translateX(0) translateY(27px);
     }
   }
   @keyframes headerLinkAnimation {
@@ -1505,8 +1505,8 @@ button {
               transform: translateX(0) translateY(0);
     }
     100% {
-      -webkit-transform: translateX(0) translateY(25px);
-              transform: translateX(0) translateY(25px);
+      -webkit-transform: translateX(0) translateY(27px);
+              transform: translateX(0) translateY(27px);
     }
   }
   .address-link:hover:before, .address-link:focus:before {

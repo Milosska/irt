@@ -92,17 +92,15 @@
 }
 
 /* ============================ link animation pattern ======================*/
-@mixin link-animation($width: 100%, $y: 30px, $color: map-get($txtcolor, 'accent')) {
+@mixin link-animation($y: 30px, $color: map-get($txtcolor, 'accent')) {
   &::before {
     position: absolute;
     top: 0;
     right: 0;
-
     transform: translateX(-110%) translateY(0);
-
     content: ' ';
     display: block;
-    width: $width;
+    width: 100%;
     height: 4px;
     background-color: $color;
   }

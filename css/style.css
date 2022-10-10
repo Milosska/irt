@@ -179,7 +179,7 @@ button {
 /*===================== header end =============================*/
 
 /*========================= footer ============================== */
-.footer {
+/* .footer {
   position: relative;
   background-color: var(--bcg-header);
 }
@@ -291,7 +291,7 @@ button {
 .footer-link-icon:focus {
   fill: var(--accent-text);
   transform: scale(1.5);
-}
+} */
 /*========================= footer end============================ */
 
 /*========================= main ============================== */

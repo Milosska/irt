@@ -167,7 +167,7 @@
   }
 
   @include media(max, tablet) {
-    @include link-animation(100%, 30px);
+    @include link-animation(30px);
   }
 
   @include media(min, tablet) {
@@ -175,13 +175,13 @@
     @include font-size(18px, 23px);
     padding-top: 5px;
     padding-bottom: 5px;
-    @include link-animation(100%, 25px);
+    @include link-animation(25px);
   }
 
   @include media(min, desktop) {
     @include font-size(22px, 28px);
 
-    @include link-animation(100%, 30px);
+    @include link-animation(30px);
     transform: translateY(0);
     transition: transform $animation, color $animation 250ms;
 
@@ -226,7 +226,7 @@
   font-weight: 500;
   @include font-size(32px, 41px);
 
-  @include link-animation(100%, 30px);
+  @include link-animation(30px);
 
   &:hover,
   &:focus {
@@ -238,12 +238,12 @@
     @include font-size(18px, 23px);
     padding-top: 5px;
     padding-bottom: 5px;
-    @include link-animation(100%, 25px);
+    @include link-animation(25px);
   }
 
   @include media(min, desktop) {
     @include font-size(22px, 28px);
-    @include link-animation(100%, 30px);
+    @include link-animation(30px);
     transform: translateY(0);
     transition: transform $animation, color $animation 250ms;
 

@@ -103,7 +103,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    // z-index: 10;
+    z-index: 10;
     padding: 45px;
     transform: translateX(100%);
     @include animation-s(transform);

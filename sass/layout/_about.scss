@@ -6,6 +6,19 @@
 .about-container {
   @extend %container;
 
+  @keyframes indexAboutAnimation {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  animation: indexAboutAnimation 2000ms linear forwards;
+
   @include media(min, desktop) {
     @include flex-l(80px);
   }

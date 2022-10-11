@@ -96,6 +96,19 @@
   text-align: center;
   padding-top: 30px;
 
+  @keyframes indexHeroAnimation {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  animation: indexHeroAnimation 2000ms linear forwards;
+
   @include media(min, desktop) {
     padding-top: 60px;
   }

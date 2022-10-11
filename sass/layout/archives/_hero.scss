@@ -52,6 +52,19 @@
   padding-left: 30px;
   padding-top: 45px;
 
+  @keyframes archivesHeroAnimation {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  animation: archivesHeroAnimation 2000ms linear forwards;
+
   @include media(min, tablet) {
     padding-left: 60px;
     padding-top: 30px;

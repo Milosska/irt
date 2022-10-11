@@ -244,6 +244,7 @@ button {
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 10;
     padding: 45px;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -892,6 +893,32 @@ button {
   margin-left: 0;
   padding-left: 30px;
   padding-top: 45px;
+  -webkit-animation: archivesHeroAnimation 2000ms linear forwards;
+          animation: archivesHeroAnimation 2000ms linear forwards;
+}
+@-webkit-keyframes archivesHeroAnimation {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes archivesHeroAnimation {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 768px) {
   .arch-container {

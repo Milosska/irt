@@ -122,11 +122,6 @@ button {
   background-color: #8cc9ff;
 }
 
-.animate__fadeInDown {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
 @media screen and (max-width: 767.5px) {
   .nav-thumb {
     display: -webkit-box;
@@ -916,11 +911,6 @@ button {
   .hero-container {
     padding-top: 60px;
   }
-}
-
-.animate__zoomIn {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 .uppertitle {

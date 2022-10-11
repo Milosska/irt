@@ -35,9 +35,8 @@
 .speakers-item {
   position: relative;
 
-  color: inherit;
   transform: scale(1);
-  @include animation-m(transform, color);
+  @include animation-s(transform);
 
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -46,7 +45,6 @@
   @include media(min, desktop) {
     &:hover {
       transform: scale(1.2);
-      color: map-get($txtcolor, 'link');
     }
   }
 }

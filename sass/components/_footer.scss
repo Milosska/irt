@@ -56,7 +56,7 @@
 .address-item {
   position: relative;
 
-  &:nth-child(-n + 2) {
+  &:first-child {
     margin-bottom: 10px;
 
     @include media(min, desktop) {

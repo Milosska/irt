@@ -190,33 +190,35 @@ button {
   }
 }
 
-.menu-btn {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  cursor: pointer;
-  background-color: transparent;
-  color: #001b4a;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-btn:hover, .menu-btn:focus {
-  color: #fff8ee;
-}
-.menu-btn--open {
-  display: block;
-}
-.menu.is-open .menu-btn--open {
-  display: none;
-}
-.menu-btn--close {
-  display: none;
-}
-.menu.is-open .menu-btn--close {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+@media screen and (max-width: 767.5px) {
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: #001b4a;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-btn:hover, .menu-btn:focus {
+    color: #fff8ee;
+  }
+  .menu-btn--open {
+    display: block;
+  }
+  .menu.is-open .menu-btn--open {
+    display: none;
+  }
+  .menu-btn--close {
+    display: none;
+  }
+  .menu.is-open .menu-btn--close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-btn {

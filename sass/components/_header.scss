@@ -50,38 +50,39 @@
 }
 
 .menu-btn {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  cursor: pointer;
-  background-color: transparent;
-  color: map-get($txtcolor, 'main');
-  @include animation-s(color);
+  @include media(max, tablet) {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: map-get($txtcolor, 'main');
+    @include animation-s(color);
 
-  &:hover,
-  &:focus {
-    color: map-get($txtcolor, 'accent');
-  }
-
-  &--open {
-    display: block;
-
-    .menu.is-open & {
-      display: none;
+    &:hover,
+    &:focus {
+      color: map-get($txtcolor, 'accent');
     }
-  }
 
-  &--close {
-    display: none;
-
-    .menu.is-open & {
+    &--open {
       display: block;
-      position: absolute;
-      top: 10px;
-      right: 10px;
+
+      .menu.is-open & {
+        display: none;
+      }
+    }
+
+    &--close {
+      display: none;
+
+      .menu.is-open & {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
     }
   }
-
   @include media(min, tablet) {
     display: none;
   }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: map-get($bgcolor, 'main');
   color: map-get($txtcolor, 'main');

@@ -140,3 +140,44 @@
     @include font-size(14px, 24px);
   }
 }
+
+/* ============== scroll up ================*/
+.up {
+  @include position(fixed, bottom, 5vh, right, 5vw);
+  z-index: 5;
+  @include flex-m;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: map-get($bgcolor, 'accent');
+  opacity: 0.2;
+  transition: opacity $animation;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  @include media(min, tablet) {
+    width: 55px;
+    height: 55px;
+  }
+
+  @include media(min, desktop) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.up-icon {
+  width: 32px;
+  height: 32px;
+  transform: rotate(270deg);
+  // color: var(--text-white);
+  // fill: var(--text-white);
+
+  @include media(min, desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}

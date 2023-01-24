@@ -156,3 +156,31 @@
     @include font-size(32px, 48px);
   }
 }
+
+.broadcast-link {
+  @extend %link;
+  display: inline-block;
+  min-width: 190px;
+  margin-top: 30px;
+  padding: 11px;
+  background-color: map-get($txtcolor, 'main');
+  border: 1px solid map-get($txtcolor, 'main');
+  border-radius: 6px;
+
+  @include font-size(16px, 20px);
+  text-align: center;
+  color: map-get($txtcolor, 'accent');
+
+  @include animation-m(background-color, color);
+
+  &:hover,
+  &:focus {
+    background-color: map-get($bgcolor, 'second-accent');
+    color: map-get($txtcolor, 'main');
+  }
+
+  @include media(min, desktop) {
+    min-width: 250px;
+    @include font-size(22px, 26px);
+  }
+}

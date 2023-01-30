@@ -115,6 +115,10 @@
   }
 }
 
+.arch-thumb {
+  @include flex-l(10px, flex-start);
+}
+
 .arch-text {
   max-width: 280px;
   margin-bottom: 15px;
@@ -138,7 +142,7 @@
   }
 }
 
-.arch-year {
+.arch-year-title {
   @include font-size(18px, 22px);
   letter-spacing: -1px;
 
@@ -151,18 +155,45 @@
   }
 }
 
-.year-2022 {
-  margin-left: 15px;
+.arch-list {
+  @extend %list;
+  @include flex-l(10px, flex-start);
+}
 
-  font-weight: 700;
+.arch-link {
+  @extend %link;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
   @include font-size(18px, 22px);
   letter-spacing: -1px;
 
+  transition: color $animation 250ms;
+
+  @include media(max, tablet) {
+    @include link-animation(30px);
+  }
+
   @include media(min, tablet) {
+    @include link-animation(25px);
     @include font-size(22px, 26px);
   }
 
+  &:hover,
+  &:focus {
+    color: map-get($txtcolor, 'accent');
+  }
+
   @include media(min, desktop) {
-    @include font-size(32px, 48px);
+    @include font-size(28px, 32px);
+    transform: translateY(0);
+    transition: transform $animation, color $animation 250ms;
+    @include link-animation(30px);
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-10px);
   }
 }

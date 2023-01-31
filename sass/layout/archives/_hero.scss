@@ -63,11 +63,11 @@
     }
   }
 
-  animation: archivesHeroAnimation 2000ms linear forwards;
-
   @include media(min, tablet) {
     padding-left: 60px;
     padding-top: 30px;
+
+    animation: archivesHeroAnimation 2000ms linear forwards;
   }
 
   @include media(min, desktop) {

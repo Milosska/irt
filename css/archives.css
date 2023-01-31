@@ -899,8 +899,6 @@ button {
   margin-left: 0;
   padding-left: 30px;
   padding-top: 45px;
-  -webkit-animation: archivesHeroAnimation 2000ms linear forwards;
-          animation: archivesHeroAnimation 2000ms linear forwards;
 }
 @-webkit-keyframes archivesHeroAnimation {
   0% {
@@ -930,6 +928,8 @@ button {
   .arch-container {
     padding-left: 60px;
     padding-top: 30px;
+    -webkit-animation: archivesHeroAnimation 2000ms linear forwards;
+            animation: archivesHeroAnimation 2000ms linear forwards;
   }
 }
 @media screen and (min-width: 1200px) {
